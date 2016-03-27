@@ -1,0 +1,23 @@
+{
+  "name": "string-helper",
+  "version": "1.0.0",
+  "description": "Helper function for string",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishekbhardwaj84/string-helper.git"
+  },
+  "keywords": [
+    "string",
+    "helper"
+  ],
+  "author": "Abhishek Bhardwaj <abhishek.bhardwaj84@gmail.com> (https://twitter.com/itz_AB)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abhishekbhardwaj84/string-helper/issues"
+  },
+  "homepage": "https://github.com/abhishekbhardwaj84/string-helper#readme"
+}
