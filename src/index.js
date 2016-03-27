@@ -1,9 +1,9 @@
-function createString(obj) {
+var createStr = function createString(obj) {
 	if (obj == null) return '';
 	return '' + obj;
 } 
 
-function trimString(obj) {
+var trimStr = function trimString(obj) {
 	if (!String.prototype.trim) {
 		String.prototype.trim = function() {
 			return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
@@ -13,6 +13,6 @@ function trimString(obj) {
 	return obj.trim();
 }
 module.exports = {
-	createString: createString(obj),
-	trim: trimString(obj)
+	createString: createStr,
+	trim: trimStr
 };
