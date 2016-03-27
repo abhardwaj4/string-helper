@@ -1,5 +1,5 @@
 {
-  "name": "string-helper",
+  "name": "string-helper-tutorial",
   "version": "1.0.0",
   "description": "Helper function for string",
   "main": "src/index.js",
