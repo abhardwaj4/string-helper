@@ -12,7 +12,37 @@ var trimStr = function trimString(obj) {
 
 	return obj.trim();
 }
+
+var startsWith = function(str, prefix, caseInSensitive) {
+	if (str == null || prefix == null) {
+		return str == null && prefix == null;
+	}
+	if (prefix.length > str.length) {
+		return false;
+	}
+	if (convertToBoolean(caseInSensitive) == true) {
+		return str.toLowerCase().startsWith(prefix.toLowerCase());
+	} else {
+		return str.startsWith(prefix);
+	}
+}
+
+function convertToBoolean(str) {
+	var type = typeof str;
+
+	if (type == 'string') {
+		return str == 'true';
+	} else if (type == 'boolean') {
+		return str;
+	} else if (type == 'number') {
+		return str == 1;
+	}
+	return false;
+}
+
+
 module.exports = {
 	createString: createStr,
-	trim: trimStr
+	trim: trimStr,
+	startsWith: startsWith
 };
